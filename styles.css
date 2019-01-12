@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+body{
+	font-family:Gill Sans, Gill Sans MT, Myriad Pro, DejaVu Sans Condensed, Helvetica, Arial," sans-serif";
+	background: url(images/bg_01.png) no-repeat right top #63d6d6;
+	color: white;
+}
+.container{
+	max-width: 1005px;
+	margin: 0 auto;
+	padding: 2em 1em;
+}
+header{
+	text-align: center;
+}
+#chatr-logo{
+	width: 180px;
+}
+nav{
+	margin: 2em auto 0;
+	max-width: 600px;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	font-size: 1.25em;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+main{
+	display: flex;
+	flex-flow: column;
+}
+.hero{
+	text-align: center;
+}
+.hero h1{
+	font-size: 2.5em;
+	font-weight: 700;
+}
+/*
+span:before{
+	content: "Aspirants";
+	animation: animate infinite 10s;
+}
+@keyframes animate{
+	0%{
+		content: "Aspirants";
+	}
+	25%{
+		content: "Seekers";
+	}
+	50%{
+		content: "Learners";
+	}
+	75%{
+		content: "Scholars";
+	}
+	100%{
+		content: "Engineers";
+	}
+	
+}
+*/
+.hero p{
+	font-size: 1.2em;
+	font-weight: 600;
+	max-width: 500;
+	line-height: 1.8em;
+	margin: 3em auto;
+}
+.hero p:before{
+	content: "";
+	display: block;
+	width: 120px;
+	border: 2px solid #ffdb37;
+	margin: 1em auto;
+}
+.hero a{
+	background: #ffd52e;
+	padding: 1em 3em;
+	border-radius: 50px;
+	color: white;
+	text-decoration: none;
+	font-size: 1.375em;
+	font-weight: 700;
+}
+figure{
+	text-align: center;
+}
+figure img{
+	margin: 3em auto 0;
+	width: 300px;
+}
+footer{
+	width: 70%;
+	position: relative;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.footer p{
+	color: white;
+	display: inline-block;
+}
+.pagesRight{
+	float: right;
+}
+.pagesRight p{
+	margin-left: 25px;
+}
+@media screen and (min-width: 820px) {
+	header{
+		display: flex;
+		justify-content: space-between;
+		flex-flow: wrap;
+		align-items: center;
+	}
+	nav{
+		margin: 0;
+	}
+	nav ul{
+		margin: 0;
+		padding: 0;
+		display: flex;
+	}
+	nav ul li{
+		list-style: none;
+		padding: 0.5em 2em;
+	}
+	nav ul li a {
+		font-size: 1.375em;
+		color: white;
+		font-weight: 700;
+		text-decoration: none;
+	}
+	.highlight{
+		border: 3px solid #ffdb37;
+		border-radius: 50px;
+	}
+	main{
+		flex-flow: row;
+	}
+	.hero {
+		text-align: left;
+	}
+	.hero h1{
+		font-size: 4em;
+	}
+	.hero p: before {
+		margin: 1em 0;
+	}
+	.hero p{
+		font-size: 1.3em;
+		padding: 0;
+		margin: 0 0 3em 0;
+	}
+	.hero a{
+		background: #AE79C4;
+	}
+	.figure img{
+		width: 300px;
+		margin: 0;
+	}
+}
