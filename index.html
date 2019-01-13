@@ -3,84 +3,53 @@
 <head>
 <meta charset="utf-8">
 <title>Verzero</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="about.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+<link rel="icon" type="image/ico" href="images/favicon-32x32.png"/>
 </head>
 
 <body>
-<div id="fullpage">
-	<div class="section">
-		<div class="landing">
-			<div class="landingWrapper">
-				<div class="nav">
-					<a href="#"><img src="images/logo.png" alt="logo" class="logo"></a>
-						<div class="pages">
-							<a href="#">How it works</a>
-							<a href="#">App Features</a>
-							<a href="#">About</a>
-							<a href="#" class="btnOne">Signup</a>
-						</div>
-				    </div>
-				<div class="landingContent">
-					<div class="contentLeft">
-						<h1>Work better Together. Schedule <br>Meetings In An Instant</h1>
-   					<p>An easier way to colaborate with your team or friends. You <br>set up the meeting and set up priority, deciede who to invite<br>and get started.</p>
-   					<p>Available for download on the Google play store and<br>App Store</p>
-   					<a href="#" class="btnTwo">Download App</a>
-					</div>
-					<div class="contentRight">
-						<img src="images/iphoneX_inHand.png" alt="iphone x in hand" class="iphoneHand">
-					</div>
-				</div>
-			</div>
-		</div>
+<header class="container">
+	<div class="logo">
+		<img src="images/logo.png" alt="logo" id="chatr-logo">
 	</div>
-	
-	
-	<div class="section">
-		<div class="features">
-			<div class="date">
-				<img src="images/cal_icon.png" alt="calender icon">
-				<h1>Easily Set the date</h1>
-  	       		<p>Access to your personal Calander lets you check <br>for open schedule dates</p>
-			</div>
-			<div class="time">
-				<img src="images/clock_icon.png" alt="clock icon">
-				<h1>Running late?</h1>
-  	       		<p>Set the meeting time. if you ever need to <br>delay, all members of the meeting will be <br>notified immediately. </p>
-			</div>
-		</div>
+
+</header>
+<main class="container">
+	<section class="hero container">
+		<h1 class="typing"></h1>
+		<script type="text/javascript" src="js/typed.js"></script>
+		<script type="text/javascript">
+		
+			var typed = new Typed(".typing", {
+				strings: ["Hello!", 
+						  "Welcome to Verzero!", 
+						  "A Smart Learning App for Aspirants!",
+						  "A Smart Learning App for Seekers!",
+						  "A Smart Learning App for Learners!",
+						  "A Smart Learning App for Scholars!", 
+						  "A Smart Learning App for Engineers!"
+						 ],
+				typeSpeed: 130,
+				backSpeed: 90,
+				loop: true
+			});
+		</script>
+		<p>Find the right educational tools for your needs. Download the App &amp; get Started.</p>
+		<a href="#">Download Now</a>
+	</section>
+	<div class="device">
+		<figure>
+			<img src="images/mi_mix3.png" alt="iphone x">
+		</figure>
 	</div>
-	
-	
-	
-	<div class="section">
-		<div class="groups">
-			<div class="groupsWrapper">
-				<div class="groupsContent">
-				<div class="contentLeft">
-					<img src="images/search_icon.png" alt="search icon">
-					<h1>Search Groups and Friends</h1>
-   	    					<p>Manage and add friends into group. Easily invite the whole <br>design team or select members for the next meeting.</p>
-   	    					<p>Meetings works with your existing contact list to seamlessly <br>transfer all your contacts to the app.</p>
-				</div>
-				<div class="contentRight">
-					<img src="images/people_groups.png" alt="contacts list image" class="groupsImage">
-				</div>
-				</div>
-				<div class="footer">
-					<p>© 2018 Verzero</p>
-					<div class="pagesRight">
-						<a href="#"><p>Terms</p></a>
-   	    				<a href="#"><p>Privacy</p></a>
-					</div>
-				</div>
-			</div>
-		</div>
+</main>
+<footer class="footer">
+	<p>© 2018 Verzero. All Rights Reserved</p>
+	<div class="pagesRight">
+		<a href="#"><p>Terms</p></a>
+   	    <a href="#"><p>Privacy</p></a>
 	</div>
-	
-	
-	
-</div>
+</footer>
+<!--Start of Tawk.to Script-->
 </body>
 </html>
